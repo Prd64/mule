@@ -1,0 +1,951 @@
+Model {
+  Name			  "techmoor_rs232"
+  Version		  4.00
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  on
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  on
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  PostLoadFcn		  ",try, rti_mdl_postloadfcn(bdroot, 'UpdateModel', 35"
+", 'RTI1401'); catch, disp(lasterr); end, "
+  Created		  "Thu Jan 13 21:10:33 2000"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "Torquil"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Sat Jan 15 21:36:18 2000"
+  ModelVersionFormat	  "1.%<AutoIncrement:39>"
+  ConfigurationManager	  "None"
+  SimParamPage		  "Solver"
+  StartTime		  "0.0"
+  StopTime		  "inf"
+  SolverMode		  "SingleTasking"
+  Solver		  "FixedStepDiscrete"
+  RelTol		  "1e-3"
+  AbsTol		  "auto"
+  Refine		  "1"
+  MaxStep		  "auto"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "0.01"
+  MaxOrder		  5
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  LimitDataPoints	  on
+  MaxDataPoints		  "1000"
+  Decimation		  "1"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  SingleTaskRateTransMsg  "none"
+  MultiTaskRateTransMsg	  "error"
+  IntegerOverflowMsg	  "warning"
+  CheckForMatrixSingularity "none"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  LinearizationMsg	  "none"
+  VectorMatrixConversionMsg "none"
+  SfunCompatibilityCheckMsg "none"
+  BlockPriorityViolationMsg "warning"
+  ArrayBoundsChecking	  "none"
+  ConsistencyChecking	  "none"
+  ZeroCross		  on
+  Profile		  off
+  SimulationMode	  "normal"
+  RTWSystemTargetFile	  "rti1401.tlc"
+  RTWOptions		  " -aEnforceIntegerDowncast=0 -aExtMode=1 -aFoldNonRo"
+"lledExpr=0 -aForceParamTrailComments=0 -aGenerateComments=1 -aIncHierarchyInI"
+"ds=1 -aInlineInvariantSignals=0 -aInlineParameters=0 -aLocalBlockOutputs=0 -a"
+"RTWVerbose=0 -aRollThreshold=5 -aShowEliminatedStatements=1"
+  RTWInlineParameters	  off
+  RTWRetainRTWFile	  on
+  RTWTemplateMakefile	  "rti1401.tmf"
+  RTWMakeCommand	  "make_rti"
+  RTWGenerateCodeOnly	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "rti_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  off
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  OptimizeBlockIOStorage  off
+  BufferReuse		  on
+  ParameterPooling	  on
+  BlockReductionOpt	  off
+  RTWExpressionDepthLimit 5
+  BooleanDataType	  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "techmoor_rs232"
+    Location		    [211, 74, 1023, 724]
+    Open		    off
+    ModelBrowserVisibility  on
+    ModelBrowserWidth	    155
+    ScreenColor		    "automatic"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      SubSystem
+      Name		      "RTI Data"
+      Tag		      "struct('RTIDataServer',struct('RTIDataServerVs'"
+",'2','RTIModelDescription','struct(''main'',''techmoor_rs232'',''sub'','''','"
+"'isMp'',0)'))"
+      Ports		      []
+      Position		      [15, 15, 85, 31]
+      BackgroundColor	      "gray"
+      DropShadow	      on
+      ShowName		      off
+      CopyFcn		      "try,  rtidc('DataHostBlockClbCopy', gcbh); catc"
+"h, disp(['Warning: ''CopyFcn'' for RTI Data block failed: ' lasterr]); end"
+      DeleteFcn		      "try,  rtidc('DataHostBlockClbDelete', gcbh); ca"
+"tch, disp(['Warning: ''DeleteFcn'' for RTI Data block failed: ' lasterr]); en"
+"d"
+      LoadFcn		      "try,  rtidc('DataHostBlockClbLoad', gcbh); catc"
+"h, disp(['Warning: ''LoadFcn'' for RTI Data block failed: ' lasterr]); end"
+      ModelCloseFcn	      "try,  rtidc('DataHostBlockClbModelClose', gcbh)"
+"; catch, disp(['Warning: ''ModelCloseFcn'' for RTI Data block failed: ' laste"
+"rr]); end"
+      PreSaveFcn	      "try,  rtidc('DataHostBlockClbPreSave', gcbh); c"
+"atch, disp(['Warning: ''PreSaveFcn'' for RTI Data block failed: ' lasterr]); "
+"end"
+      PostSaveFcn	      "try,  rtidc('DataHostBlockClbPostSave', gcbh); "
+"catch, disp(['Warning: ''PostSaveFcn'' for RTI Data block failed: ' lasterr])"
+"; end"
+      NameChangeFcn	      "try,  rtidc('DataHostBlockClbNameChange', gcbh)"
+"; catch, disp(['Warning: ''NameChangeFcn'' for RTI Data block failed: ' laste"
+"rr]); end"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "RTI_DATA_HOST"
+      MaskDescription	      "RTI Data Block.\nThis block is used by RTI to s"
+"tore internal model-dependent data.\nPlease keep this block on the root level"
+" of the model. Deleting this block will result in data loss.\n\nNEVER DELETE "
+"OR COPY THIS BLOCK!"
+      MaskHelp		      "RTI Data Block.\nThis block is used by RTI to s"
+"tore internal model-dependent data.\nPlease keep this block on the root level"
+" of the model. Deleting this block will result in data loss.\n\nNEVER DELETE "
+"OR COPY THIS BLOCK!"
+      MaskDisplay	      "text(0.5, 0.5, 'RTI Data', 'HorizontalAlignment"
+"', 'center');"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "normalized"
+      System {
+	Name			"RTI Data"
+	Location		[450, 250, 640, 300]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "RTI Data Store"
+	  Tag			  "struct('private',struct('version',struct('d"
+"sVer',uint32(2),'dsVerCreation',uint32(2),'RTI',struct('ver','4.2','type','RT"
+"I1401')),'access',struct('type','Model','isPerm',1,'created',['13-Jan-2000 22"
+":34:46'],'modified',['15-Jan-2000 21:36:19'],'location','')),'public',struct("
+"'main',struct('data',[]),'sub',struct('name',{{'techmoor_rs232'}},'data',{{st"
+"ruct('TH',struct('thTaskInfo',struct('taskType',{'TIMER','HWINT','TMRINT','SW"
+"INT'},'tasksNumOf',{1,0,0,0},'srcIds',{{'TIMERA'},{},{},{}},'taskNames',{{['T"
+"imer Task 1']},{},{},{}})),'th_tc',struct('taskType','TIMER','blkh',-1,'srcId"
+"','TIMERA','srcSgnName',['Timer A interrupt'],'srcCpuName','','taskName',['Ti"
+"mer Task 1  [0.01] s'],'smplTime',1e-02,'smplTimeOffs',0,'priority',1,'ovcTyp"
+"e',3,'ovcMax',0),'tc_th',struct('taskType','TIMER','blkh',-1,'srcId','TIMERA'"
+",'srcSgnName',['Timer A interrupt'],'srcCpuName','','taskName',['Timer Task 1"
+"  [0.01] s'],'smplTime',1e-02,'smplTimeOffs',0,'priority',1,'ovcType',3,'ovcM"
+"ax',0))}})))"
+	  Ports			  []
+	  Position		  [146, 12, 181, 25]
+	  ForegroundColor	  "white"
+	  ShowName		  off
+	  ShowPortLabels	  on
+	  TreatAsAtomicUnit	  off
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  MaskType		  "RTI_DATA_STORE"
+	  MaskDescription	  "RTI Data Store Block. This block is used by"
+" RTI to store internal model dependent data. Deleting this block will result "
+"in data loss.\n\nNEVER DELETE, COPY, OR MODIFY THIS BLOCK!"
+	  MaskHelp		  "RTI Data Store Block. This block is used by"
+" RTI to store internal model dependent data. Deleting this block will result "
+"in data loss.\n\nNEVER DELETE, COPY, OR MODIFY THIS BLOCK!"
+	  MaskDisplay		  "text(0.5, 0.5, ' ', 'HorizontalAlignment', "
+"'center');"
+	  MaskIconFrame		  off
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "normalized"
+	  System {
+	    Name		    "RTI Data Store"
+	    Location		    [450, 250, 640, 300]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "RTI Data Store"
+	      Ports		      []
+	      Position		      [146, 12, 181, 25]
+	      ForegroundColor	      "white"
+	      ShowName		      off
+	      ShowPortLabels	      on
+	      TreatAsAtomicUnit	      off
+	      RTWSystemCode	      "Auto"
+	      RTWFcnNameOpts	      "Auto"
+	      RTWFileNameOpts	      "Auto"
+	      MaskType		      "RTI_DATA_STORE"
+	      MaskDescription	      "RTI Data Store Block. This block is use"
+"d by RTI to store internal model dependent data. Deleting this block will res"
+"ult in data loss.\n\nNEVER DELETE, COPY, OR MODIFY THIS BLOCK!"
+	      MaskHelp		      "RTI Data Store Block. This block is use"
+"d by RTI to store internal model dependent data. Deleting this block will res"
+"ult in data loss.\n\nNEVER DELETE, COPY, OR MODIFY THIS BLOCK!"
+	      MaskDisplay	      "text(0.5, 0.5, ' ', 'HorizontalAlignmen"
+"t', 'center');"
+	      MaskIconFrame	      off
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskIconUnits	      "normalized"
+	      System {
+		Name			"RTI Data Store"
+		Location		[450, 250, 640, 300]
+		Open			off
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "RTI Data Store"
+		  Ports			  []
+		  Position		  [146, 12, 181, 25]
+		  ForegroundColor	  "white"
+		  ShowName		  off
+		  ShowPortLabels	  on
+		  TreatAsAtomicUnit	  off
+		  RTWSystemCode		  "Auto"
+		  RTWFcnNameOpts	  "Auto"
+		  RTWFileNameOpts	  "Auto"
+		  MaskType		  "RTI_DATA_STORE"
+		  MaskDescription	  "RTI Data Store Block. This block is"
+" used by RTI to store internal model dependent data. Deleting this block will"
+" result in data loss.\n\nNEVER DELETE, COPY, OR MODIFY THIS BLOCK!"
+		  MaskHelp		  "RTI Data Store Block. This block is"
+" used by RTI to store internal model dependent data. Deleting this block will"
+" result in data loss.\n\nNEVER DELETE, COPY, OR MODIFY THIS BLOCK!"
+		  MaskDisplay		  "text(0.5, 0.5, ' ', 'HorizontalAlig"
+"nment', 'center');"
+		  MaskIconFrame		  off
+		  MaskIconOpaque	  on
+		  MaskIconRotate	  "none"
+		  MaskIconUnits		  "normalized"
+		  System {
+		    Name		    "RTI Data Store"
+		    Location		    [450, 250, 640, 300]
+		    Open		    off
+		    ModelBrowserVisibility  on
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    SubSystem
+		    Name		    "RTI Data Store"
+		    Ports		    []
+		    Position		    [146, 12, 181, 25]
+		    ForegroundColor	    "white"
+		    ShowName		    off
+		    ShowPortLabels	    on
+		    TreatAsAtomicUnit	    off
+		    RTWSystemCode	    "Auto"
+		    RTWFcnNameOpts	    "Auto"
+		    RTWFileNameOpts	    "Auto"
+		    MaskType		    "RTI_DATA_STORE"
+		    MaskDescription	    "RTI Data Store Block. This block "
+"is used by RTI to store internal model dependent data. Deleting this block wi"
+"ll result in data loss.\n\nNEVER DELETE, COPY, OR MODIFY THIS BLOCK!"
+		    MaskHelp		    "RTI Data Store Block. This block "
+"is used by RTI to store internal model dependent data. Deleting this block wi"
+"ll result in data loss.\n\nNEVER DELETE, COPY, OR MODIFY THIS BLOCK!"
+		    MaskDisplay		    "text(0.5, 0.5, ' ', 'HorizontalAl"
+"ignment', 'center');"
+		    MaskIconFrame	    off
+		    MaskIconOpaque	    on
+		    MaskIconRotate	    "none"
+		    MaskIconUnits	    "normalized"
+		    System {
+		    Name		    "RTI Data Store"
+		    Location		    [450, 250, 640, 300]
+		    Open		    off
+		    ModelBrowserVisibility  on
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    ZoomFactor		    "100"
+		    }
+		    }
+		  }
+		}
+	      }
+	    }
+	  }
+	}
+      }
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator"
+      Position		      [440, 223, 470, 237]
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Transmit Signal Pulse"
+      Tag		      "0.0 (9/12/03)"
+      Ports		      [0, 1]
+      Position		      [90, 104, 170, 136]
+      AttributesFormatString  "Ver=%<Tag>"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      System {
+	Name			"Transmit Signal Pulse"
+	Location		[104, 204, 602, 436]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"automatic"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant"
+	  Position		  [30, 25, 60, 55]
+	  Value			  "1"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  DiscreteIntegrator
+	  Name			  "Discrete-Time\nIntegrator"
+	  Ports			  [2, 1]
+	  Position		  [110, 30, 165, 70]
+	  IntegratorMethod	  "ForwardEuler"
+	  ExternalReset		  "rising"
+	  InitialConditionSource  "internal"
+	  InitialCondition	  "0"
+	  LimitOutput		  off
+	  UpperSaturationLimit	  "inf"
+	  LowerSaturationLimit	  "-inf"
+	  ShowSaturationPort	  off
+	  ShowStatePort		  off
+	  SampleTime		  "-1"
+	  RTWStateStorageClass	  "Auto"
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Relational\nOperator"
+	  Position		  [245, 42, 275, 73]
+	  Operator		  ">="
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Tx Interval [s]"
+	  Position		  [135, 101, 210, 139]
+	  Value			  "1"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  UnitDelay
+	  Name			  "Unit Delay"
+	  Position		  [175, 165, 210, 205]
+	  Orientation		  "left"
+	  X0			  "0"
+	  SampleTime		  "-1"
+	  RTWStateStorageClass	  "Auto"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Tx Pulse"
+	  Position		  [415, 53, 445, 67]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Constant"
+	  SrcPort		  1
+	  DstBlock		  "Discrete-Time\nIntegrator"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Discrete-Time\nIntegrator"
+	  SrcPort		  1
+	  Points		  [55, 0]
+	  DstBlock		  "Relational\nOperator"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Tx Interval [s]"
+	  SrcPort		  1
+	  Points		  [10, 0; 0, -55]
+	  DstBlock		  "Relational\nOperator"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Relational\nOperator"
+	  SrcPort		  1
+	  Points		  [-5, 0; 25, 0]
+	  Branch {
+	    Points		    [0, 125]
+	    DstBlock		    "Unit Delay"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Tx Pulse"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Unit Delay"
+	  SrcPort		  1
+	  Points		  [-85, 0; 0, -125]
+	  DstBlock		  "Discrete-Time\nIntegrator"
+	  DstPort		  2
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Tx Rx Unpack"
+      Ports		      [0, 1, 0, 1]
+      Position		      [275, 184, 345, 276]
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      on
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      System {
+	Name			"Tx Rx Unpack"
+	Location		[211, 74, 1023, 724]
+	Open			on
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"82"
+	Block {
+	  BlockType		  TriggerPort
+	  Name			  "Trigger"
+	  Ports			  []
+	  Position		  [225, 20, 245, 40]
+	  TriggerType		  "rising"
+	  ShowOutputPort	  off
+	  OutputDataType	  "auto"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "CAN_TYPE1_SER_RX_M1_C1"
+	  Ports			  [0, 3]
+	  Position		  [85, 230, 180, 430]
+	  SourceBlock		  "rti1401stdasertp1lib/CAN_TYPE1_SER_RX_M1_C1"
+	  SourceType		  "RTI"
+	  Reserved1		  "[]"
+	  Reserved2		  "[]"
+	  Reserved3		  "[]"
+	  Reserved4		  "[]"
+	  DSProperties		  "struct('RTI',struct('IOBoardType',{{'DS1401"
+"','STDA','SER','TP1'}},'SlaveProcessor','CAN','Version',uint32(1),'BlockType'"
+",struct('isSLSource',uint8(1),'isSLSink',uint8(1),'isHWSource',uint8(0),'isHW"
+"Sink',uint8(1),'isSetup',uint8(0),'isInline',uint8(1),'isNonInline',uint8(0),"
+"'isInterrupt',uint8(0),'isChannelwise',uint8(1)),'UnitType','GENSER','Identif"
+"ier','RECEIVE','DialogType','ML','BlockSet','NONE'))"
+	  RTIBlockInterface	  "struct('BlockName',struct('Token',{{'CAN_TY"
+"PE1_SER_RX_M','_C'}},'BlockParam',{{'BoardNo','ChannelNo'}}),'InputPortsWidth"
+"',int32(1),'InputPortsActive',0,'InputPortsDataType',{{'SS_UINT32'}},'InputPo"
+"rtsName',{{'NumBytes'}},'OutputPortsWidth',int32([4 1 1]),'OutputPortsActive'"
+",[1 1 1],'OutputPortsDataType',{{'SS_UINT8','SS_UINT32','SS_INT32'}},'OutputP"
+"ortsName',{{'RXBytes','NumRXBytes','Status'}},'BlockDisplay',{{['Serial Recei"
+"ve'],'center'}},'IconTransparency','on','ParameterTunableNames',{{}},'InitLev"
+"el',2,'DialogFcn','guigenserreceive','MaskDescription',['To read the contents"
+" of the UART status register.'])"
+	  RTIBlockParameters	  "struct('BoardNo',{{1,'ON',[1 16]}},'Channel"
+"No',{{1,'ON',[1 2]}},'ChannelNumOf',{{2,'OFF',[]}},'ReceptionDataMode',{{1,'O"
+"FF',[]}},'ParamTunableMode',{{2,'OFF',[]}},'BytesRefNumOfT',{{'1','OFF',[1 in"
+"f]}},'BytesRefNumOfNT',{{'4','OFF',[1 inf]}},'BytesRefNumOfMax',{{'1','OFF',["
+"1 inf]}},'BytesRefNumOfMode',{{0,'OFF',[]}},'BytesActNumOfMode',{{1,'OFF',[]}"
+"},'ReceptionStatusMode',{{1,'OFF',[]}},'FifoSizeDefault',{{64,'OFF',[]}},'TLC"
+"FileName',{{'rtigenserreceive','OFF',[]}})"
+	  RTISFcnParameters	  "struct('BoardNo','double','ChannelNo','doub"
+"le','ChannelNumOf','double','ReceptionDataMode','double','ParamTunableMode','"
+"double','BytesRefNumOfT','double','BytesRefNumOfNT','double','BytesRefNumOfMa"
+"x','double','BytesRefNumOfMode','double','BytesActNumOfMode','double','Recept"
+"ionStatusMode','double','TLCFileName','char')"
+	  RTIBlockParaDefault	  "struct('BoardNo',1,'ChannelNo',1,'ChannelNu"
+"mOf',2,'ReceptionDataMode',1,'ParamTunableMode',1,'BytesRefNumOfT',1,'BytesRe"
+"fNumOfNT',1,'BytesRefNumOfMax',1,'BytesRefNumOfMode',0,'BytesActNumOfMode',1,"
+"'ReceptionStatusMode',1,'FifoSizeDefault',64,'TLCFileName','rtigenserreceive'"
+")"
+	  Port {
+	    PortNumber		    2
+	    Name		    "numRxBytes"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	  }
+	  Port {
+	    PortNumber		    3
+	    Name		    "status"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	  }
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "CAN_TYPE1_SER_SETUP_M1_C1"
+	  Ports			  []
+	  Position		  [220, 115, 330, 140]
+	  SourceBlock		  "rti1401stdasertp1lib/CAN_TYPE1_SER_SETUP_M1"
+"_C1"
+	  SourceType		  "RTI"
+	  Reserved1		  "[]"
+	  Reserved2		  "[]"
+	  Reserved3		  "[]"
+	  Reserved4		  "[]"
+	  DSProperties		  "struct('RTI',struct('IOBoardType',{{'DS1401"
+"','STDA','SER','TP1'}},'SlaveProcessor','CAN','Version',uint32(1),'BlockType'"
+",struct('isSLSource',uint8(0),'isSLSink',uint8(0),'isHWSource',uint8(0),'isHW"
+"Sink',uint8(0),'isSetup',uint8(1),'isInline',uint8(1),'isNonInline',uint8(0),"
+"'isInterrupt',uint8(0),'isChannelwise',uint8(1)),'UnitType','GENSER','Identif"
+"ier','SETUP','DialogType','ML','BlockSet','NONE'))"
+	  RTIBlockInterface	  "struct('BlockName',struct('Token',{{'CAN_TY"
+"PE1_SER_SETUP_M','_C'}},'BlockParam',{{'BoardNo','ChannelNo'}}),'BlockDisplay"
+"',{{['Serial Setup'],'center'}},'IconTransparency','off','ParameterTunableNam"
+"es',{{}},'InitLevel',1,'DialogFcn','guigensersetup','MaskDescription',['To se"
+"t the global specifications for the UART interface.'])"
+	  RTIBlockParameters	  "struct('ParityMode',{{1,'OFF',[1 5]}},'Tran"
+"sceiverMode',{{[1;1],'OFF',[]}},'QuartzFrequency',{{1,'OFF',[1 1]}},'BoardNo'"
+",{{1,'ON',[1 16]}},'ChannelNo',{{1,'ON',[1 2]}},'ChannelNumOf',{{2,'OFF',[]}}"
+",'BaudRate',{{'115200','OFF',[]}},'DataBitsNumOf',{{4,'OFF',[1 4]}},'StopBits"
+"NumOf',{{1,'OFF',[1 3]}},'ReceiveIntLevelUart',{{4,'OFF',[1 4]}},'AutoflowMod"
+"e',{{0,'OFF',[]}},'FifoSize',{{'64','OFF',[]}},'ReceiveIntLevelFifo',{{0,'OFF"
+"',[]}},'FifoOverrunMode',{{1,'OFF',[]}},'FifoBlockSize',{{'0','OFF',[]}},'Ter"
+"mMode',{{1,'OFF',[]}},'TLCFileName',{{'rtigensersetup','OFF',[]}})"
+	  RTISFcnParameters	  "struct('BoardNo','double','ChannelNo','doub"
+"le','ChannelNumOf','double','BaudRate','double','DataBitsNumOf','double','Sto"
+"pBitsNumOf','double','ParityMode','double','TransceiverMode','double','Receiv"
+"eIntLevelUart','double','AutoflowMode','double','FifoSize','double','ReceiveI"
+"ntLevelFifo','double','FifoBlockSize','double','TermMode','double','QuartzFre"
+"quency','double','TLCFileName','char')"
+	  RTIBlockParaDefault	  "struct('ParityMode',1,'TransceiverMode',[1;"
+"1],'QuartzFrequency',1,'BoardNo',1,'ChannelNo',1,'ChannelNumOf',2,'BaudRate',"
+"115200,'DataBitsNumOf',4,'StopBitsNumOf',1,'ReceiveIntLevelUart',4,'AutoflowM"
+"ode',0,'FifoSize',64,'ReceiveIntLevelFifo',0,'FifoOverrunMode',1,'FifoBlockSi"
+"ze',0,'TermMode',1,'TLCFileName','rtigensersetup')"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "CAN_TYPE1_SER_TX_M1_C1"
+	  Ports			  [1, 2]
+	  Position		  [165, 685, 300, 740]
+	  SourceBlock		  "rti1401stdasertp1lib/CAN_TYPE1_SER_TX_M1_C1"
+	  SourceType		  "RTI"
+	  Reserved1		  "[]"
+	  Reserved2		  "[]"
+	  Reserved3		  "[]"
+	  Reserved4		  "[]"
+	  DSProperties		  "struct('RTI',struct('IOBoardType',{{'DS1401"
+"','STDA','SER','TP1'}},'SlaveProcessor','CAN','Version',uint32(1),'BlockType'"
+",struct('isSLSource',uint8(1),'isSLSink',uint8(1),'isHWSource',uint8(1),'isHW"
+"Sink',uint8(0),'isSetup',uint8(0),'isInline',uint8(1),'isNonInline',uint8(0),"
+"'isInterrupt',uint8(0),'isChannelwise',uint8(1)),'UnitType','GENSER','Identif"
+"ier','TRANSMIT','DialogType','ML','BlockSet','NONE'))"
+	  RTIBlockInterface	  "struct('BlockName',struct('Token',{{'CAN_TY"
+"PE1_SER_TX_M','_C'}},'BlockParam',{{'BoardNo','ChannelNo'}}),'InputPortsWidth"
+"',int32([4 1]),'InputPortsActive',[1 0],'InputPortsDataType',{{'SS_UINT8','SS"
+"_UINT32'}},'InputPortsName',{{'TXBytes','NumBytes'}},'OutputPortsWidth',int32"
+"([1 1]),'OutputPortsActive',[1 1],'OutputPortsDataType',{{'SS_UINT32','SS_INT"
+"32'}},'OutputPortsName',{{'NumTXBytes','Status'}},'BlockDisplay',{{['Serial T"
+"ransmit'],'center'}},'IconTransparency','on','ParameterTunableNames',{{}},'In"
+"itLevel',2,'DialogFcn','guigensertransmit','MaskDescription',['To read the co"
+"ntents of the UART status register.'])"
+	  RTIBlockParameters	  "struct('BoardNo',{{1,'ON',[1 16]}},'Channel"
+"No',{{1,'ON',[1 2]}},'ChannelNumOf',{{2,'OFF',[]}},'TransmitFifoOverrunMode',"
+"{{1,'OFF',[]}},'ParamTunableMode',{{2,'OFF',[]}},'BytesRefNumOfT',{{'1','OFF'"
+",[1 inf]}},'BytesRefNumOfNT',{{'4','OFF',[1 inf]}},'BytesRefNumOfMax',{{'1','"
+"OFF',[1 inf]}},'BytesRefNumOfMode',{{0,'OFF',[]}},'BytesActNumOfMode',{{1,'OF"
+"F',[]}},'TransmissionStatusMode',{{1,'OFF',[]}},'FifoSizeDefault',{{64,'OFF',"
+"[]}},'TLCFileName',{{'rtigensertransmit','OFF',[]}})"
+	  RTISFcnParameters	  "struct('BoardNo','double','ChannelNo','doub"
+"le','ChannelNumOf','double','TransmitFifoOverrunMode','double','ParamTunableM"
+"ode','double','BytesRefNumOfT','double','BytesRefNumOfNT','double','BytesRefN"
+"umOfMax','double','BytesRefNumOfMode','double','BytesActNumOfMode','double','"
+"TransmissionStatusMode','double','TLCFileName','char')"
+	  RTIBlockParaDefault	  "struct('BoardNo',1,'ChannelNo',1,'ChannelNu"
+"mOf',2,'TransmitFifoOverrunMode',1,'ParamTunableMode',1,'BytesRefNumOfT',1,'B"
+"ytesRefNumOfNT',1,'BytesRefNumOfMax',1,'BytesRefNumOfMode',0,'BytesActNumOfMo"
+"de',1,'TransmissionStatusMode',1,'FifoSizeDefault',64,'TLCFileName','rtigense"
+"rtransmit')"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant"
+	  Position		  [40, 575, 70, 605]
+	  Value			  "[114 48 58 13]"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  DataTypeConversion
+	  Name			  "Data Type Conversion"
+	  Position		  [475, 331, 530, 359]
+	  DataType		  "double"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  DataTypeConversion
+	  Name			  "Data Type Conversion1"
+	  Position		  [155, 581, 210, 609]
+	  DataType		  "uint8"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux"
+	  Ports			  [1, 3]
+	  Position		  [410, 220, 415, 440]
+	  BackgroundColor	  "black"
+	  ShowName		  off
+	  Outputs		  "[1 2 1]"
+	  BusSelectionMode	  off
+	  Port {
+	    PortNumber		    1
+	    Name		    "regid"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	  }
+	  Port {
+	    PortNumber		    3
+	    Name		    "ret"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	  }
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain"
+	  Position		  [610, 325, 640, 355]
+	  Gain			  "1.0"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	  Port {
+	    PortNumber		    1
+	    Name		    "XAccel"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	  }
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain1"
+	  Position		  [305, 380, 335, 410]
+	  Gain			  "1"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain2"
+	  Position		  [235, 305, 265, 335]
+	  Gain			  "1"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator"
+	  Position		  [505, 250, 525, 270]
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator1"
+	  Position		  [520, 400, 540, 420]
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator2"
+	  Position		  [320, 310, 340, 330]
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator3"
+	  Position		  [305, 460, 325, 480]
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator4"
+	  Position		  [370, 675, 390, 695]
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator5"
+	  Position		  [365, 750, 385, 770]
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "X Accel"
+	  Position		  [730, 323, 760, 337]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  Name			  "regid"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Demux"
+	  SrcPort		  1
+	  Points		  [0, 5]
+	  DstBlock		  "Terminator"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  2
+	  Points		  [0, 15]
+	  DstBlock		  "Data Type Conversion"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "status"
+	  Labels		  [0, 0]
+	  SrcBlock		  "CAN_TYPE1_SER_RX_M1_C1"
+	  SrcPort		  3
+	  DstBlock		  "Gain1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Gain1"
+	  SrcPort		  1
+	  Points		  [0, 55; -50, 0]
+	  DstBlock		  "Terminator3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Gain2"
+	  SrcPort		  1
+	  DstBlock		  "Terminator2"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "numRxBytes"
+	  Labels		  [0, 0]
+	  SrcBlock		  "CAN_TYPE1_SER_RX_M1_C1"
+	  SrcPort		  2
+	  Points		  [15, 0; 0, -10]
+	  DstBlock		  "Gain2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "CAN_TYPE1_SER_RX_M1_C1"
+	  SrcPort		  1
+	  Points		  [210, 0]
+	  DstBlock		  "Demux"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "CAN_TYPE1_SER_TX_M1_C1"
+	  SrcPort		  1
+	  Points		  [25, 0; 0, -15]
+	  DstBlock		  "Terminator4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "CAN_TYPE1_SER_TX_M1_C1"
+	  SrcPort		  2
+	  Points		  [20, 0; 0, 35]
+	  DstBlock		  "Terminator5"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant"
+	  SrcPort		  1
+	  Points		  [65, 0]
+	  DstBlock		  "Data Type Conversion1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Data Type Conversion1"
+	  SrcPort		  1
+	  Points		  [55, 0; 0, 80; -120, 0]
+	  DstBlock		  "CAN_TYPE1_SER_TX_M1_C1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Data Type Conversion"
+	  SrcPort		  1
+	  Points		  [20, 0; 0, -5]
+	  DstBlock		  "Gain"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "XAccel"
+	  Labels		  [2, 0]
+	  SrcBlock		  "Gain"
+	  SrcPort		  1
+	  Points		  [40, 0; 0, -10]
+	  DstBlock		  "X Accel"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "ret"
+	  Labels		  [3, 0]
+	  SrcBlock		  "Demux"
+	  SrcPort		  3
+	  Points		  [40, 0; 0, 5]
+	  DstBlock		  "Terminator1"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Tx Rx Unpack"
+      SrcPort		      1
+      DstBlock		      "Terminator"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Transmit Signal Pulse"
+      SrcPort		      1
+      Points		      [135, 0]
+      DstBlock		      "Tx Rx Unpack"
+      DstPort		      trigger
+    }
+  }
+}
